@@ -1,0 +1,19 @@
+<h1>{{ general_text['title'] }}</h1>
+<p>Bauteil entwerfen</p>
+<p>{{ general_text['topic_intro'] }}</p>
+<p>{{ general_text['steps_intro'] }}</p>
+<ol>
+    <li>Starte FreeCAD.</li>
+    <li>Erstelle ein neues Dokument nur Neu</li>
+    <li>Speichere das neu erstellte Dokument als teil.FCStd ab.</li>
+    <li>Wechsle in den Part Design Arbeitsbereich.</li>
+    <li>Erstelle einen neuen Körper mit Körper erstellen.</li>
+    {% for step in steps %}
+    <li>{{ step }}</li>
+    {% endfor %}
+    <li>Speichere das Dokument mit Speichern.</li>
+    <li>Schließe das Dokument.</li>
+</ol>
+<p>{{ general_text['success'] }}</p>
+<p>{{ general_text['next'] }}</p>
+<p>{{ general_text['ad_upsell'] }}</p>
