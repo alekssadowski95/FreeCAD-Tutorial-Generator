@@ -1,18 +1,78 @@
 <h1>{{ general_text['title'] }}</h1>
-<p>Bauteil entwerfen</p>
 <p>{{ general_text['topic_intro'] }}</p>
+<figure>
+    <img src="" alt="">
+    <figcaption>Abbildung 1:</figcaption>
+</figure>
 <p>{{ general_text['steps_intro'] }}</p>
 <ol>
     <li>Starte FreeCAD.</li>
-    <li>Erstelle ein neues Dokument nur Neu</li>
-    <li>Speichere das neu erstellte Dokument als teil.FCStd ab.</li>
+    <figure>
+        <img src="" alt="">
+        <figcaption>Abbildung 2:</figcaption>
+    </figure>
+    <li>Erstelle ein neues Dokument mit <b>Neu</b>.</li>
+    <figure>
+        <img src="" alt="">
+        <figcaption>Abbildung 3:</figcaption>
+    </figure>
+    <li>Speichere das neu erstellte Dokument als <em>teil.FCStd</em> ab.</li>
+    <figure>
+        <img src="" alt="">
+        <figcaption>Abbildung 4:</figcaption>
+    </figure>
     <li>Wechsle in den Part Design Arbeitsbereich.</li>
+    <figure>
+        <img src="" alt="">
+        <figcaption>Abbildung 5:</figcaption>
+    </figure>
     <li>Erstelle einen neuen Körper mit Körper erstellen.</li>
+    <figure>
+        <img src="" alt="">
+        <figcaption>Abbildung 6:</figcaption>
+    </figure>
     {% for step in steps %}
-    <li>{{ step }}</li>
+    
+    {% if step == 'Sketcher::SketchObject' %}
+    <li>Erstelle eine Skizze.</li>
+    <figure>
+        <img src="" alt="">
+        <figcaption>Abbildung {{ loop.index + 6 }}:</figcaption>
+    </figure>
+
+    {% elif step == 'PartDesign::Pad' %}
+    <li>Wähle die zuletzt erstellte Skizze und erstelle eine Aufpolsterung.</li>
+    <figure>
+        <img src="" alt="">
+        <figcaption>Abbildung {{ loop.index + 6 }}:</figcaption>
+    </figure>
+
+    {% elif step == 'PartDesign::Pocket' %}
+    <li>Wähle die zuletzt erstellte Skizze und erstelle eine Tasche.</li>
+    <figure>
+        <img src="" alt="">
+        <figcaption>Abbildung {{ loop.index + 6 }}:</figcaption>
+    </figure>
+
+    {% elif step == 'PartDesign::PolarPattern' %}
+    <li>Wähle das zuletzt erstellte Feature und erstelle ein Polares Muster.</li>
+    <figure>
+        <img src="" alt="">
+        <figcaption>Abbildung {{ loop.index + 6 }}:</figcaption>
+    </figure>
+
+    {% endif %}
     {% endfor %}
     <li>Speichere das Dokument mit Speichern.</li>
+    <figure>
+        <img src="" alt="">
+        <figcaption>Abbildung 2:</figcaption>
+    </figure>
     <li>Schließe das Dokument.</li>
+    <figure>
+        <img src="" alt="">
+        <figcaption>Abbildung 2:</figcaption>
+    </figure>
 </ol>
 <p>{{ general_text['success'] }}</p>
 <p>{{ general_text['next'] }}</p>
