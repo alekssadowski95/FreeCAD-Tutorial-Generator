@@ -57,8 +57,8 @@ if __name__ == '__main__':
     import os
 
     #FREECAD_ABS_PATH = 'C:/PROGRA~1/FreeCAD_weekly-builds-29126-2022-06-12-conda-Windows-x86_64-py38/bin' 
-    FREECAD_ABS_PATH = 'C:/PROGRA~1/FreeCAD_weekly-builds-29126-2022-06-12-conda-Windows-x86_64-py38/bin'
-    #FREECAD_ABS_PATH = 'C:/PROGRA~1/FreeCAD 0.20/bin'
+    #FREECAD_ABS_PATH = 'C:/PROGRA~1/FreeCAD_weekly-builds-29126-2022-06-12-conda-Windows-x86_64-py38/bin'
+    FREECAD_ABS_PATH = 'C:/PROGRA~1/FreeCAD 0.20/bin'
 
     # Add path to FreeCAD Python interface
     # path to your FreeCAD.so or FreeCAD.dll file
