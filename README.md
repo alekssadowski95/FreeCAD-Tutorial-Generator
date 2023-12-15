@@ -14,6 +14,6 @@ The FreeCAD Tutorial Generator goes a step further than all hardware-open-source
 - Integrate into FCViewer.
 - Integrate into FreeCAD.
 
--> Let people go one step further in their commitment to open-source by easily and quickly open-sourcing not only the result but also the design process of their parts in FreeCAD.
+-> Let people go one step further in their commitment to open-source by easily and quickly open-sourcing not only the result but also the design process of their parts in FreeCAD. Increase FreeCADs' popularity.
 
--> Enable makers to quickly and easily create content for their blogs, helping to showcase their FreeCAD projects.
+-> Enable makers to quickly and easily create content for their blogs, helping to showcase their FreeCAD projects. Increase FreeCADs' popularity.
